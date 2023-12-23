@@ -1,0 +1,323 @@
+<html>
+    <head>
+        <style>
+          .bg-container{
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ocean.jpg");
+    background-size: cover;
+    height: 100dvh;
+}
+.tourism-card{
+    background-color: white;
+   text-align: center;
+   border-top-right-radius: 25px;
+   border-top-left-radius: 25px;
+}
+.bg-favcontainer{
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
+    background-size: cover;
+    height:100dvh;
+}
+.heading{
+    color:white;
+    text-align:center;
+}
+.bg-card{
+    background-color: white;
+    border-radius:8px;
+    padding:16px;
+    margin:15px;
+    border-color: yellow;
+}
+.image{
+    height:200px;
+    width:150px;
+}
+.para{
+    width:400px;
+}
+.botton{
+    margin:50%;
+    padding:8px;
+}
+.bg-background{
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/seabg.png");
+    background-size: cover;
+    height:100dvh;
+    padding:24px;
+}
+.bg-heading{
+    color:white;
+    padding:24px;
+    font-weight: bold;
+    padding:24px;
+}
+card-container{
+    background-color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 24px;
+}
+.card-heading{
+    color:#0f0c46;
+    font-size:23px;
+}
+.car-para{
+    font-size:400px;
+    color:white;
+    font-weight:bold;
+    
+}
+.card-detail{
+    padding:16px;
+}
+.button{
+    margin-left: 50%;
+    margin-right: 50%;
+}
+.order{
+    list-style-type: lower-roman;
+}
+
+        </style>
+        <link rel="stylesheet" href="stylecaurosil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+     </head>
+    <body>
+        <div id="sectionHome">
+            <div class="bg-container d-flex flex-column justify-content-end">
+                <div class="tourism-card">
+                    <h1 class="main-heading">Tourism</h1>
+                    <p class="paragraph">Plan your trip Where ever you wanted to go</p>
+                    <button class="btn btn-primary" onclick="display('sectionfavouriteplaces')">Started</button>
+                </div>
+            </div>
+            
+        </div>
+        <div id="sectionfavouriteplaces">
+            <div class="bg-favcontainer">
+                <h1 class="heading">Favourite places</h1>
+                <div class="bg-card d-flex flex-row justify-content-center" onclick="display('sectionTajmahaldetail')">
+                <div>
+                    <h1>Taj Mahal</h1>
+                    <p class="para">If there was just one symbol represent all of india.It would be the Taj Mahal</p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png"
+            class="image"/>
+            </div>
+            <div class="bg-card d-flex flex-row justify-content-center" onclick="display('sectionGoldentempledetail')">
+                <div>
+                    <h1>Golden temple</h1>
+                    <p class="para">Amrisar is world-famous for the beautiful and highly revered Golden Temple</p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png"
+            class="image"/>
+            </div>
+            <div class="bg-card d-flex flex-row justify-content-center" onclick="display('sectionmysoredetail')">
+                <div>
+                    <h1>Mysore Palace</h1>
+                    <p class="para">The Mysore palace is a historical place and the royal residence at Mysore</p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png"
+            class="image"/>
+            </div>
+            <div class="bg-card d-flex flex-row justify-content-center" onclick="display('sectionvaranasidetail')">
+                <div>
+                    <h1>Varanasi Temple</h1>
+                    <p class="para">Varanasi Temple is most famous Hindus temples dedicated to lord shiva</p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png"
+            class="image"/>
+        </div>
+        <buuton class="botton btn-dark" onclick="display('sectionHome')">
+            back
+        </buuton>
+        </div>
+        </div>
+        <div id="sectionTajmahaldetail">
+            <div class="bg-background">
+                <h1 class="bg-heading">Detailed View</h1>
+                <div class="card-container">
+                  <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="card-detail">
+                    <h1 class="card-heading">Taj Mahal</h1>
+                    <p class="card-para">
+                      The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture.
+                     Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect.
+                     Not a piece of architecture, as other buildings are, but the proud passions of an emperor’s love wrought in living stones.
+                    </p>
+                  </div>
+                  <button class="button btn-dark" onclick="display('sectionfavouriteplaces')">
+                    back
+                </button>
+                </div>
+              </div>
+        </div>
+        <div id="sectionGoldentempledetail">
+            <div class="bg-background">
+                <h1 class="bg-heading">Detailed View</h1>
+                <div class="card-container">
+                  <div id="goldentemple" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#goldentemple" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#goldentemple" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#goldentemple" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple1-img.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple2-img.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple3-img.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#goldentemple" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#goldentemple" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="card-detail">
+                    <h1 class="card-heading">Golden Temple</h1>
+                    <p class="card-para">
+                        The Golden Temple, also known as Harmandir Sahib is a gurdwara located in the city of Amritsar, Punjab, India.
+                        There are many places to visit Near Golden Temple like :
+                       <ol class="order">
+                        <li>Jallianwala Bagh</li>
+                        <li>Wagah Border</li>
+                        <li>Harike Wetland</li>
+                        <li>Bathinda Fort</li>
+                       </ol>
+                  </div>
+                  <button class="button btn-dark" onclick="display('sectionfavouriteplaces')">
+                    back
+                </button>
+                </div>
+              </div>
+            </div>
+            <div id="sectionmysoredetail">
+                <div class="bg-background">
+                    <h1 class="bg-heading">Detailed View</h1>
+                    <div class="card-container">
+                      <div id="Mysoredetail" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#Mysoredetail" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#Mysoredetail" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#Mysoredetail" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace1-img.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace2-img.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace3-img.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#Mysoredetail" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#Mysoredetail" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div class="card-detail">
+                        <h1 class="card-heading">Mysore Palace</h1>
+                        <p class="card-para">
+                            Mysore Palace, also called Amba Vilas Palace, is one of the most magnificent and largest palaces in India. 
+                            Situated in the southern state of Karnataka, it used to be the official residence of the Wodeyar Dynasty, the rulers of Mysore from 1399 to 1950. 
+                            The grand palace stands tall in the heart of Mysore city and attracts visitors from across the world. Being one of the prime attractions in India after the Taj Mahal, 
+                            it certainly deserves a place in every traveler’s bucket list.
+                         </p>
+                         <button class="button btn-dark" onclick="display('sectionfavouriteplaces')">
+                            back
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="sectionvaranasidetail">
+                    <div class="bg-background">
+                        <h1 class="bg-heading">Detailed View</h1>
+                        <div class="card-container">
+                          <div id="varanasi" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#varanasi" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#varanasi" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#varanasi" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://i.ibb.co/PCJYWRp/istockphoto-862267688-1024x1024.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://i.ibb.co/gSk3dBR/istockphoto-862271278-1024x1024.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://i.ibb.co/PzMhr7L/srivatsan-balaji-T5s48os-IQTU-unsplash.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#varanasi" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#varanasi" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                          <div class="card-detail">
+                            <h1 class="card-heading">Varanasi</h1>
+                            <p class="card-para">
+                                Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva
+                             </p>
+                             <button class="button btn-dark" onclick="display('sectionfavouriteplaces')">
+                                back
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </body>
+ </html>
